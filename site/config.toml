@@ -1,6 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Homepage"
+enableRobotsTXT = "true"
 
 [params.footer]
   copyright = '© 2018 ООО «Кипет». ❤ All rights reserved.'
