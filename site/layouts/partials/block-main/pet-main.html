@@ -32,17 +32,18 @@
         </div>
     </div>
     <div class="section-container">
-        <div class="logo">
-            <img src="img/logo-white.svg" alt="">
-            <div class="text">Keepet</div>
-        </div>
-        <h2>Заботливое приложение <br> для вашего питомца</h2>
-        <p>
-            Всё это великолепие строительных рынков, заборов, <br> рекламных баннеров и билбордов...
-        </p>
-        <div class="links">
-            <a href="#" class="pet-btn is-white"><span>открыть в </span>app store</a>
-            <a href="#" class="pet-btn is-white"><span>открыть в </span>play market</a>
-        </div>
+        {{ with .first_section }}
+            <div class="logo">
+                <img src="img/logo-white.svg" alt="">
+                <div class="text">{{.heading}}</div>
+            </div>
+            <h2>{{.text}}</h2>
+            <p>{{.description}}</p>
+            <div class="links">
+                {{ range .button_app}}
+                    <a href="{{.link}}" class="pet-btn is-white"><span>{{.name}}</span></a>
+                {{ end }}
+            </div>
+        {{ end }}
     </div>
 </section>

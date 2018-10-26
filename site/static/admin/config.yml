@@ -17,7 +17,7 @@ collections:
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-      # Страницы сайта
+  # Страницы сайта
   - name: "pages"
     label: "Pages"
     files:
@@ -25,11 +25,21 @@ collections:
         label: "Главная страница"
         name: "home"
         fields:
-          - {label: "SEO", name: seo, widget: object, hint: "Блок для SEO", fields: [
+          - {label: SEO, name: seo, widget: object, hint: "Блок для SEO", fields: [
               {label: Title, name: title, widget: string},
               {label: Description, name: description, widget: string},
               {label: Keywords, name: keywords, widget: list,
                  fields: [{label: Ключ, name: key, widget: string}]}
+              ]}
+          - {label: Первая секция, name: first_section, widget: object, hint: "Первая секция", fields: [
+              {label: Заголовок, name: heading, widget: string},
+              {label: Слоган, name: text, widget: markdown},
+              {label: Описание, name: description, widget: markdown},
+              {label: Кнопки магазинов, name: button_app, widget: list,
+                 fields: [
+                   {label: Название, name: name, widget: string},
+                   {label: Ссылка, name: link, widget: string}
+                 ]}
               ]}
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
