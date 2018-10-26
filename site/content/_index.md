@@ -59,5 +59,23 @@ third_section:
         вопрос максимально подробно
       heading: Карточка питомца
       image: /img/cat.png
+fourth_section:
+  button_app:
+    - link: /
+      name: ОТКРЫТЬ В APP STORE
+    - link: /
+      name: ОТКРЫТЬ В PLAY MARKET
+  heading: Что тут можно делать
+  promo_block:
+    - description: 'Найдите себе питомца, или пристройте своих котяток в хорошие руки'
+      heading: Пристройство питомцев
+      image: /img/can-do-1.png
+    - description: >-
+        Тревожная кнопка которая отправит приметы вашего питомца всем
+        пользователям приложения поблизости от места потери
+      heading: Поиск потеряшек
+      image: /img/can-do-2.png
+    - description: 'Найдите себе питомца, или пристройте своих котяток в хорошие руки'
+      heading: Лента новостей
 ---
 
