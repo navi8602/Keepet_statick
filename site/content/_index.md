@@ -1,7 +1,7 @@
 ---
 seo:
-    title: "KeePet: бесплатная консультация ветеринаров - KeePet"
-    subtitle: Заботливое приложение для вашего питомца
-    image: /img/home-jumbotron.jpg
+  description: Заботливое приложение для вашего питомца
+  subtitle: бесплатная
+  title: 'KeePet: бесплатная консультация ветеринаров - KeePet'
 ---
 
