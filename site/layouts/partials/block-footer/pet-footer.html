@@ -1,15 +1,17 @@
 <footer class="pet-section pet-footer">
-	<strong>Контактная информация и правовые документы</strong>
+	<strong>{{.Site.Params.footer.author}}</strong>
 	<div class="links">
-		<a href="#">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a>
-		<a href="#">ПРАВОВАЯ ИНФОРМАЦИЯ</a>
-		<a href="#">ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ</a>
+		{{ range .Site.Menus.footer }}
+			<a href="{{ .URL }}" title="{{ .Title }}">
+				{{- .Name -}}
+			</a>
+		{{ end }}
 	</div>
-	<p>Тел. +7 909 176-14-87 <br>
-		Адрес: г. Москва. Сельскохозяйственная ул. д. 10
+	<p>Тел. {{.Site.Params.footer.phone}} <br>
+		Адрес: {{.Site.Params.footer.adress}}
 	</p>
 	<a href="#" class="pet-btn is-white">обратная связь</a>
-	<p>© 2018 ООО «Петдоктор». All rights reserved.</p>
+	<p>{{.Site.Params.footer.copyright}}</p>
 </footer>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>

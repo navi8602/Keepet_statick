@@ -1,3 +1,26 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Homepage"
+
+[params.footer]
+  copyright = '© 2018 ООО «Кипет». ❤ All rights reserved.'
+  author = "Контактная информация и правовые документы"
+  phone = "+7 000 123-45-67 "
+  adress = "г. Москва. Сельскохозяйственная ул. д. 10"
+
+[menu]
+  [[menu.footer]]
+    identifier = "Terms of use"
+    name = "ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ"
+    title = "ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ"
+    url = "/"
+  [[menu.footer]]
+    identifier = "Legal information"
+    name = "ПРАВОВАЯ ИНФОРМАЦИЯ"
+    title = "ПРАВОВАЯ ИНФОРМАЦИЯ"
+    url = "/"
+  [[menu.footer]]
+    identifier = "License Agreement"
+    name = "ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ"
+    title = "ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ"
+    url = "/"

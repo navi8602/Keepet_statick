@@ -16,40 +16,27 @@
             </div>
         </div>
     </div>
-    <div class="section-container">
-        <h2>Что тут можно делать</h2>
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <div class="can-item">
-                    <div class="img">
-                        <img class="img-response" src="img/can-do-1.png" alt="">
+    {{with .fourth_section}}
+        <div class="section-container">
+            <h2>{{.heding}}</h2>
+            <div class="row">
+                {{range .promo_block}}
+                    <div class="col-xs-12 col-md-4">
+                        <div class="can-item">
+                            <div class="img">
+                                <img class="img-response" src="{{.image}}" alt="{{.heading}}">
+                            </div>
+                            <strong>{{.heading}}</strong>
+                            <p>{{.description}}</p>
+                        </div>
                     </div>
-                    <strong>Пристройство питомцев</strong>
-                    <p>Найдите себе питомца, или пристройте своих котяток в хорошие руки</p>
-                </div>
+                {{ end }}
             </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="can-item">
-                    <div class="img">
-                        <img class="img-response" src="img/can-do-2.png" alt="">
-                    </div>
-                    <strong>Поиск потеряшек</strong>
-                    <p>Тревожная кнопка которая отправит приметы вашего питомца всем пользователям приложения поблизости от места потери</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="can-item">
-                    <div class="img">
-                        <img class="img-response" src="img/can-do-3.png" alt="">
-                    </div>
-                    <strong>Лента новостей</strong>
-                    <p>Найдите себе питомца, или пристройте своих котяток в хорошие руки</p>
-                </div>
+            <div class="links">
+                {{ range .button_app}}
+                <a href="{{.link}}" class="pet-btn is-white"><span>{{.name}}</span></a>
+                {{ end }}
             </div>
         </div>
-        <div class="links">
-            <a href="#" class="pet-btn is-white"><span>открыть в </span>app store</a>
-            <a href="#" class="pet-btn is-white"><span>открыть в </span>play market</a>
-        </div>
-    </div>
+    {{ end }}
 </section>

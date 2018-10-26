@@ -102,6 +102,46 @@ export default class PostPreview extends React.Component {
                     </div>
                 </div>
         </section>
+        <section className="pet-section pet-app-can text-center">
+            <div className="parallax-scene" id="app-can-scene">
+                <div data-depth="0.05" className="layer">
+                    <div className="layer-1">
+                        <img src="/img/2-1.png" alt=""/>
+                    </div>
+                </div>
+                <div data-depth="0.3" className="layer">
+                    <div className="layer-2">
+                        <img src="/img/2-2.png" alt=""/>
+                    </div>
+                </div>
+                <div data-depth="0.6" className="layer">
+                    <div className="layer-3">
+                        <img src="/img/2-3.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div className="section-container">
+                <h2>{ entry.getIn(["data", "fourth_section", "heading"])}</h2>
+                <div className="row">
+                    {(entry.getIn(['data', 'fourth_section', 'promo_block']) || []).map((promo_block, index) =>
+                    <div  key={index} className="col-xs-12 col-md-4">
+                        <div className="can-item">
+                            <div className="img">
+                                <img className="img-response" src={promo_block.get('image')}/>
+                            </div>
+                            <strong>{promo_block.get('heading')}</strong>
+                            <p>{promo_block.get('description')}</p>
+                        </div>
+                    </div>
+                    )}
+                </div>
+                <div className="links">
+                    {(entry.getIn(['data', 'fourth_section', 'button_app']) || []).map((button_app, index) =>
+                        <a key={index} href={button_app.get('link')} className="pet-btn is-white"><span>{button_app.get('name')}</span></a>
+                    )}
+                </div>
+            </div>
+        </section>
     </div>
   }
 }
