@@ -1,6 +1,6 @@
 <head>
 
-	<title>{{ .Title }} | DriveLab | ТЕХЦЕНТР</title>
+	<title>{{ .Params.seo.title }}</title>
 	<link rel="stylesheet" href="/css/main.css" />
 
 	<meta charset="utf-8">
@@ -34,9 +34,9 @@
 	<meta name="ICBM" content="55.781307, 37.699287">
 
 	<!-- SEO -->
-	<meta name="description" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Description }}{{ end }}">
-	<meta content="{{ delimit .Keywords ", " }}" name="keywords">
-	<meta content="{{ $isHomePage := eq .Title .Title }}{{ .Site.Params.description }}{{ if eq $isHomePage true }} - {{ .Description }}{{ end }}" property="og:description">
+	<meta name="description" content="{{ .Params.seo.description }}">
+	<meta name="keywords" content="{{ with .Params.seo }}{{ range .keywords }}{{ .key }},{{ end }}{{ end }}">
+	<meta content="{{ .Params.seo.description }}" property="og:description">
 	<meta name="robots" content="noodp"/>
 	<link rel="canonical" href="{{ .Permalink }}" />
 
@@ -45,8 +45,8 @@
 	<meta property="og:image" content="https://drive-lab.ru/img/og-image.jpg">
 	<meta property="og:locale" content="ru_RU" />
 	<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
-	<meta content="{{ .Title }}{{ if .IsHome }} - {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}" property="og:title">
-	<meta content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" property="og:description">
+	<meta content="{{ .Params.seo.title }}" property="og:title">
+	<meta content="{{ .Params.seo.description }}" property="og:description">
 	<meta property="og:url" content="{{ .Permalink }}" />
-	<meta property="og:site_name" content="{{ .Site.Title }}" />
+	<meta property="og:site_name" content="{{ .Params.seo.title }}" />
 </head>
