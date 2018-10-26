@@ -51,7 +51,7 @@ export default class PostPreview extends React.Component {
                 <p>{ entry.getIn(["data", "first_section","description"])}</p>
                 <div className="links">
                     {(entry.getIn(['data', 'first_section', 'button_app']) || []).map((button_app, index) =>
-                        <a key={index} href={button_app.get('link')} className="pet-btn is-white"><span>{button_app.get('name')}</span></a>
+                        <a key={index} href={button_app.get('link')} className="pet-btn is-white">{button_app.get('name')}</a>
                     )}
                 </div>
             </div>
@@ -69,7 +69,7 @@ export default class PostPreview extends React.Component {
                         <p>{ entry.getIn(["data", "second_section","description"])}</p>
                         <div className="links">
                             {(entry.getIn(['data', 'second_section', 'button_app']) || []).map((button_app, index) =>
-                                <a key={index} href={button_app.get('link')} className="pet-btn is-blue"><span>{button_app.get('name')}</span></a>
+                                <a key={index} href={button_app.get('link')} className="pet-btn is-blue">{button_app.get('name')}</a>
                             )}
                         </div>
                     </div>
@@ -97,7 +97,7 @@ export default class PostPreview extends React.Component {
                     </div>
                     <div className="links">
                         {(entry.getIn(['data', 'second_section', 'button_app']) || []).map((button_app, index) =>
-                            <a key={index} href={button_app.get('link')} className="pet-btn is-white"><span>{button_app.get('name')}</span></a>
+                            <a key={index} href={button_app.get('link')} className="pet-btn is-white">{button_app.get('name')}</a>
                         )}
                     </div>
                 </div>
@@ -137,7 +137,7 @@ export default class PostPreview extends React.Component {
                 </div>
                 <div className="links">
                     {(entry.getIn(['data', 'fourth_section', 'button_app']) || []).map((button_app, index) =>
-                        <a key={index} href={button_app.get('link')} className="pet-btn is-white"><span>{button_app.get('name')}</span></a>
+                        <a key={index} href={button_app.get('link')} className="pet-btn is-white">{button_app.get('name')}</a>
                     )}
                 </div>
             </div>
