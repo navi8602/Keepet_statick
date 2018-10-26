@@ -1,33 +1,25 @@
 <section class="pet-section pet-app-property">
-    <img class="road" src="img/road.png" alt="">
-    <div class="pet-app-property-inner">
-        <div class="text">
-            <h2>Особенности приложения</h2>
-            <p>
-                Всё это великолепие строительных рынков, заборов, <br>
-                рекламных баннеров и билбордов...
-            </p>
-        </div>
-        <div class="property">
-            <div class="item">
-                <img src="img/bird.png" alt="">
-                <strong>Запись на приём</strong>
-                <p>Всё это великолепие строительных рынков, заборов, рекламных баннеров и билбордов.</p>
+    <img class="road" src="img/road.png" alt="{{.heading}}">
+    {{ with .third_section}}
+        <div class="pet-app-property-inner">
+            <div class="text">
+                <h2>{{.heading}}</h2>
+                <p>{{.description}}</p>
             </div>
-            <div class="item">
-                <img src="img/mustage.png" alt="">
-                <strong>Ветеринары</strong>
-                <p>Всё это великолепие строительных рынков, заборов, рекламных баннеров и билбордов...</p>
+            <div class="property">
+                {{range .promo_block}}
+                <div class="item">
+                    <img src="{{.image}}" alt="{{.heading}}">
+                    <strong>{{.heading}}</strong>
+                    <p>{{.description}}</p>
+                </div>
+                {{end}}
             </div>
-            <div class="item">
-                <img src="img/cat.png" alt="">
-                <strong>Карточка питомца</strong>
-                <p>Всё это великолепие строительных рынков, заборов, рекламных баннеров и билбордов.</p>
+            <div class="links">
+                {{ range .button_app}}
+                <a href="{{.link}}" class="pet-btn is-white"><span>{{.name}}</span></a>
+                {{ end }}
             </div>
         </div>
-        <div class="links">
-            <a href="#" class="pet-btn is-white"><span>открыть в </span>app store</a>
-            <a href="#" class="pet-btn is-white"><span>открыть в </span>play market</a>
-        </div>
-    </div>
+    {{ end }}
 </section>

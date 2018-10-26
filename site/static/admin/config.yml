@@ -25,13 +25,13 @@ collections:
         label: "Главная страница"
         name: "home"
         fields:
-          - {label: SEO, name: seo, widget: object, hint: Блок для SEO, fields: [
+          - {label: 🔴 SEO, name: seo, widget: object, hint: Блок для SEO, fields: [
               {label: Title, name: title, widget: string},
               {label: Description, name: description, widget: string},
               {label: Keywords, name: keywords, widget: list,
                  fields: [{label: Ключ, name: key, widget: string}]}
               ]}
-          - {label: Первая секция, name: first_section, widget: object, hint: Первая секция, fields: [
+          - {label:  1⃣  Первая секция, name: first_section, widget: object, hint: Первая секция, fields: [
               {label: Заголовок, name: heading, widget: string},
               {label: Слоган, name: text, widget: markdown},
               {label: Описание, name: description, widget: markdown},
@@ -41,9 +41,24 @@ collections:
                    {label: Ссылка, name: link, widget: string}
                  ]}
             ]}
-          - {label: Вторая секция, name: second_section, widget: object, hint: Вторая секция, fields: [
+          - {label:  2⃣  Вторая секция, name: second_section, widget: object, hint: Вторая секция, fields: [
               {label: Заголовок, name: heading, widget: string},
               {label: Описание, name: description, widget: markdown},
+              {label: Кнопки магазинов, name: button_app, widget: list,
+                 fields: [
+                   {label: Название, name: name, widget: string},
+                   {label: Ссылка, name: link, widget: string}
+                 ]}
+            ]}
+          - {label:  3⃣  Третья секция, name: third_section, widget: object, hint: Третья секция, fields: [
+              {label: Заголовок, name: heading, widget: string},
+              {label: Описание, name: description, widget: markdown},
+              {label: Промо блоки, name: promo_block, widget: list,
+                 fields: [
+                   {label: Картинка, name: image, widget: image},
+                   {label: Заголовок, name: heading, widget: string},
+                   {label: Описание, name: description, widget: markdown}
+                ]},
               {label: Кнопки магазинов, name: button_app, widget: list,
                  fields: [
                    {label: Название, name: name, widget: string},
