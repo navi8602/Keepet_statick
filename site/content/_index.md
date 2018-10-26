@@ -8,9 +8,9 @@ seo:
 first_section:
   button_app:
     - link: /
-      name: ОТКРЫТЬ В APP STORE
+      name: APP STORE
     - link: /
-      name: ОТКРЫТЬ В PLAY MARKET
+      name: PLAY MARKET
   description: |-
     Наше приложение Keepet, предназначено для того, чтобы сделать жизнь/
 
@@ -23,9 +23,9 @@ first_section:
 second_section:
   button_app:
     - link: /
-      name: ОТКРЫТЬ В APP STORE
+      name: APP STORE
     - link: /
-      name: ОТКРЫТЬ В PLAY MARKET
+      name: PLAY MARKET
   description: >-
     Задайте вопрос ветеринару. Специалист ответит Вам, как только закончит
     осматривать своих любимых пациентов
@@ -33,9 +33,9 @@ second_section:
 third_section:
   button_app:
     - link: /
-      name: ОТКРЫТЬ В APP STORE
+      name: APP STORE
     - link: /
-      name: ОТКРЫТЬ В PLAY MARKET
+      name: PLAY MARKET
   description: >-
     Задавайте вопросы ветеринарам, ведите дневник здоровья своего питомца,
 
@@ -62,9 +62,9 @@ third_section:
 fourth_section:
   button_app:
     - link: /
-      name: ОТКРЫТЬ В APP STORE
+      name: APP STORE
     - link: /
-      name: ОТКРЫТЬ В PLAY MARKET
+      name: PLAY MARKET
   heading: Что тут можно делать
   promo_block:
     - description: 'Найдите себе питомца, или пристройте своих котяток в хорошие руки'
