@@ -1,21 +1,22 @@
 <section class="pet-section pet-have-question">
     <div class="row">
         <div class="col-xs-12 col-sm-7 col-xl-6">
+            {{ with .second_section }}
             <div class="text-block">
                 <div class="subjects">
                     <img src="img/subj-1.png" alt="">
                     <img src="img/subj-2.png" alt="">
                     <img src="img/subj-3.png" alt="">
                 </div>
-                <h2>Есть вопрос <br> к ветеринару ?</h2>
-                <p>
-                    Признайтесь, вы любите смотреть по сторонам, проезжая по МКАДу или какой-нибудь федеральной трассе? Вам доставляет удовольствие это зрелище?
-                </p>
+                <h2>{{.heading}}</h2>
+                <p>{{.description}}</p>
                 <div class="links">
-                    <a href="#" class="pet-btn is-blue"><span>открыть в </span>app store</a>
-                    <a href="#" class="pet-btn is-blue"><span>открыть в </span>play market</a>
+                    {{ range .button_app}}
+                        <a href="{{.link}}" class="pet-btn is-blue"><span>{{.name}}</span></a>
+                    {{ end }}
                 </div>
             </div>
+            {{ end }}
         </div>
         <div class="col-xs-12 col-sm-5 col-xl-5 col-xl-offset-1 text-center">
             <img class="img-response" src="img/owl.svg" alt="">

@@ -11,7 +11,8 @@ export default class PostPreview extends React.Component {
         image = window.parent.location.protocol + "//" + window.parent.location.host + image;
     }
 
-    return <section className="pet-section pet-main-section">
+    return<div>
+      <section className="pet-section pet-main-section">
         <div className="parallax-scene" id="main-section-scene">
             <div data-depth="0.05" className="layer">
                 <div className="layer-1">
@@ -55,10 +56,32 @@ export default class PostPreview extends React.Component {
                 {(entry.getIn(['data', 'first_section', 'button_app']) || []).map((button_app, index) =>
                     <a key={index} href={button_app.get('link')} className="pet-btn is-white"><span>{button_app.get('name')}</span></a>
                 )}
-                <a href="#" className="pet-btn is-white"><span>открыть в </span>app store</a>
-                <a href="#" className="pet-btn is-white"><span>открыть в </span>play market</a>
             </div>
         </div>
     </section>
+    <section className="pet-section pet-have-question">
+        <div className="row">
+            <div className="col-xs-12 col-sm-7 col-xl-6">
+                <div className="text-block">
+                    <div className="subjects">
+                        <img src="/img/subj-1.png" alt=""/>
+                        <img src="/img/subj-2.png" alt=""/>
+                        <img src="/img/subj-3.png" alt=""/>
+                    </div>
+                    <h2>{ entry.getIn(["data", "second_section","heading"])}</h2>
+                    <p>{ entry.getIn(["data", "second_section","description"])}</p>
+                    <div className="links">
+                        {(entry.getIn(['data', 'second_section', 'button_app']) || []).map((button_app, index) =>
+                            <a key={index} href={button_app.get('link')} className="pet-btn is-blue"><span>{button_app.get('name')}</span></a>
+                        )}
+                    </div>
+                </div>
+            </div>
+            <div className="col-xs-12 col-sm-5 col-xl-5 col-xl-offset-1 text-center">
+                <img className="img-response" src="/img/owl.svg" alt=""/>
+            </div>
+        </div>
+    </section>
+    </div>
   }
 }

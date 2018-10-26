@@ -25,13 +25,13 @@ collections:
         label: "Главная страница"
         name: "home"
         fields:
-          - {label: SEO, name: seo, widget: object, hint: "Блок для SEO", fields: [
+          - {label: SEO, name: seo, widget: object, hint: Блок для SEO, fields: [
               {label: Title, name: title, widget: string},
               {label: Description, name: description, widget: string},
               {label: Keywords, name: keywords, widget: list,
                  fields: [{label: Ключ, name: key, widget: string}]}
               ]}
-          - {label: Первая секция, name: first_section, widget: object, hint: "Первая секция", fields: [
+          - {label: Первая секция, name: first_section, widget: object, hint: Первая секция, fields: [
               {label: Заголовок, name: heading, widget: string},
               {label: Слоган, name: text, widget: markdown},
               {label: Описание, name: description, widget: markdown},
@@ -40,7 +40,16 @@ collections:
                    {label: Название, name: name, widget: string},
                    {label: Ссылка, name: link, widget: string}
                  ]}
-              ]}
+            ]}
+          - {label: Вторая секция, name: second_section, widget: object, hint: Вторая секция, fields: [
+              {label: Заголовок, name: heading, widget: string},
+              {label: Описание, name: description, widget: markdown},
+              {label: Кнопки магазинов, name: button_app, widget: list,
+                 fields: [
+                   {label: Название, name: name, widget: string},
+                   {label: Ссылка, name: link, widget: string}
+                 ]}
+            ]}
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
