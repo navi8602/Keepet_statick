@@ -77,5 +77,6 @@ fourth_section:
       image: /img/can-do-2.png
     - description: 'Найдите себе питомца, или пристройте своих котяток в хорошие руки'
       heading: Лента новостей
+      image: /img/can-do-3.png
 ---
 
