@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: navi-creator/Keepet_statick
+  name: git-gateway
 
 media_folder: "site/static/img"
 public_folder: "img"
