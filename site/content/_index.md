@@ -5,11 +5,20 @@ seo:
     - key: бесплатная
     - key: ветеринаров
   title: 'KeePet: бесплатная консультация ветеринаров - KeePet'
-first-section:
+first_section:
   button-app:
-    - link: /google
-    - link: /app
-  description: Заботливое приложение для вашего питомца
+    - link: /
+      name: ОТКРЫТЬ В APP STORE
+    - link: /
+      name: ОТКРЫТЬ В PLAY MARKET
+  description: |-
+    Наше приложение Keepet, предназначено для того, чтобы сделать жизнь 
+
+    вашего питомца более уютной и легче для вас!
   heading: Keepet
+  text: |-
+    Заботливое приложение
+
+    для вашего питомца
 ---
 
