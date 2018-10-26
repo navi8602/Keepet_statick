@@ -1,7 +1,7 @@
-const CACHE_VERSION = 1;
+const CACHE_VERSION = 2;
 
 const BASE_CACHE_FILES = [
-  "/style.css",
+  "/css/style.css",
   "/script.js",
   "/search.json",
   "/manifest.json",
@@ -9,13 +9,13 @@ const BASE_CACHE_FILES = [
 ];
 
 const OFFLINE_CACHE_FILES = [
-  "/style.css",
+  "/css/style.css",
   "/script.js",
   "/offline/index.html",
 ];
 
 const NOT_FOUND_CACHE_FILES = [
-  "/style.css",
+  "/css/style.css",
   "/script.js",
   "/404.html",
 ];

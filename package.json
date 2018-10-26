@@ -35,6 +35,7 @@
     "gotrue-js": "^0.9.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
+    "gulp-batch": "^1.0.5",
     "gulp-postcss": "^8.0.0",
     "gulp-util": "^3.0.7",
     "imports-loader": "^0.8.0",
@@ -53,6 +54,8 @@
     "gulp-inject": "^4.2.0",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
-    "svg-sprite-loader": "^3.0.0"
+    "run-sequence": "^2.2.1",
+    "svg-sprite-loader": "^3.0.0",
+    "sw-precache": "^5.2.1"
   }
 }
