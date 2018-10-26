@@ -1,5 +1,10 @@
 {
-	"name": "",
+	"short_name": "KeePet",
+	"name": "KeePet App",
+	"description": "Software Engineer. Speaker. Writer. Dad. Coach. Occasionally funny",
+	"start_url": "/",
+	"theme_color": "#ffffff",
+	"background_color": "#f1f1f1",
 	"icons": [
 		{
 			"src": "\/img\/android-chrome-192x192.png",
@@ -12,6 +17,5 @@
 			"type": "image\/png"
 		}
 	],
-	"theme_color": "#ffffff",
 	"display": "standalone"
 }
