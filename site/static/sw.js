@@ -8,7 +8,7 @@ const BASE_CACHE_FILES = [
 const OFFLINE_CACHE_FILES = [
   "css/main.css",
   "sw.js",
-  "/offline/index.html",
+  "/index.html",
 ];
 
 const NOT_FOUND_CACHE_FILES = [
