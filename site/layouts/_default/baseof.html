@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
-  {{ partial "head" . }}
+<html lang="ru">
+  {{ partial "block-header/head" . }}
   <body class="sans-serif">
-    {{ partial "nav" . }}
+    {{ partial "block-nav/pet-nav" . }}
     {{ block "main" . }}{{ end }} 
-    {{ partial "footer" . }} 
+    {{ partial "block-footer/pet-footer" . }}
   </body>
 </html>

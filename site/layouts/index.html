@@ -1,13 +1,11 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+{{ partial "block-main/pet-main" .}}
 
-{{ partial "short-text" .Params.blurb}}
+{{ partial "block-question/pet-question" .}}
 
-{{ partial "2-up" .Params }}
+{{ partial "block-property/pet-property" .}}
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-
-{{ partial "blog" . }}
+{{ partial "block-can/pet-can" .}}
 
 {{ end }}

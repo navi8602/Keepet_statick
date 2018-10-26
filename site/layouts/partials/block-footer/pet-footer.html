@@ -1,0 +1,44 @@
+<footer class="pet-section pet-footer">
+	<strong>Контактная информация и правовые документы</strong>
+	<div class="links">
+		<a href="#">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a>
+		<a href="#">ПРАВОВАЯ ИНФОРМАЦИЯ</a>
+		<a href="#">ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ</a>
+	</div>
+	<p>Тел. +7 909 176-14-87 <br>
+		Адрес: г. Москва. Сельскохозяйственная ул. д. 10
+	</p>
+	<a href="#" class="pet-btn is-white">обратная связь</a>
+	<p>© 2018 ООО «Петдоктор». All rights reserved.</p>
+</footer>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script type="text/javascript">
+        $('.main-nav a').click(function () {
+            $('.main-nav').removeClass('open');
+        })
+        $('#openMenu').click(function () {
+            $('.main-nav').addClass('open');
+        })
+        $('#closeMenu').click(function () {
+            $('.main-nav').removeClass('open');
+        })
+
+
+        var mainScene = document.getElementById('main-section-scene');
+        var mainParallax = new Parallax(mainScene, {
+            scalarX: 2,
+            scalarY: 2
+        });
+
+        var appScene = document.getElementById('app-can-scene');
+        var appParallax = new Parallax(appScene, {
+            scalarX: 2,
+            scalarY: 2
+        });
+</script>
+
+</body>
+
+</html>

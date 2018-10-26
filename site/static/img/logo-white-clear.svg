@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="136.031" viewBox="0 0 150 136.031">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #263238;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="205" y="229" width="44" height="43" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="205" y="229" width="44" height="43" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDQiIGhlaWdodD0iNDMiIHZpZXdCb3g9IjAgMCA0NCA0MyI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIyMiIgeTE9IjQzIiB4Mj0iMjIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjM0MiIgc3RvcC1jb2xvcj0iI2ZmMTc0NCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNDE3IiBzdG9wLWNvbG9yPSIjZmYxNzQ0Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzI2MzIzOCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDQiIGhlaWdodD0iNDMiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Rectangle_26_copy_2" data-name="Rectangle 26 copy 2" class="cls-1" d="M290.782,216.11l0.057,0.035c-0.081.121-.172,0.234-0.254,0.354a2.981,2.981,0,0,1-.35.484C283.7,226.071,263.852,252,228,252c-36.436,0-55.7-25.929-62.235-35.017a2.981,2.981,0,0,1-.35-0.484c-0.083-.12-0.173-0.233-0.254-0.354l0.057-.035a2.992,2.992,0,1,1,5.6-2.1c0.06,0,.121-0.01.181-0.01a30,30,0,0,0,54-18v-4c0-8.031-3.911-17.169-8.608-20.511-6.461-4.6-16.47-8.378-16.395-19.209,0.136-19.769,22.281-18.311,28.016-12.576,5.531-5.531,27.854-7.027,27.99,12.694,0.075,10.83-9.812,14.879-16.395,19.209C234.547,174.936,231,183.924,231,192v4h0a30,30,0,0,0,54,18c0.06,0,.121.008,0.181,0.01A2.992,2.992,0,1,1,290.782,216.11Z" transform="translate(-153 -135.969)"/>
+  <path id="Ellipse_7_copy" data-name="Ellipse 7 copy" class="cls-1" d="M259,194a4,4,0,1,1-4,4A4,4,0,0,1,259,194Zm16-24a4,4,0,1,1-4,4A4,4,0,0,1,275,170Zm24,16a4,4,0,1,1-4,4A4,4,0,0,1,299,186Zm-102,8a4,4,0,1,1-4,4A4,4,0,0,1,197,194Zm-16-24a4,4,0,1,1-4,4A4,4,0,0,1,181,170Zm-24,16a4,4,0,1,1-4,4A4,4,0,0,1,157,186Z" transform="translate(-153 -135.969)"/>
+  <path id="Rounded_Rectangle_4" data-name="Rounded Rectangle 4" class="cls-2" d="M249,229v21a22,22,0,0,1-44,0V229h44Z" transform="translate(-153 -135.969)"/>
+</svg>
