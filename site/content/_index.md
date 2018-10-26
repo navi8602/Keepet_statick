@@ -9,8 +9,6 @@ first_section:
   button_app:
     - link: /
       name: ОТКРЫТЬ В APP STORE
-    - link: /
-      name: ОТКРЫТЬ В PLAY MARKET
   description: |-
     Наше приложение Keepet, предназначено для того, чтобы сделать жизнь/
 
