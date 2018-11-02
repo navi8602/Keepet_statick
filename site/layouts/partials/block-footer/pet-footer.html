@@ -40,6 +40,23 @@
             scalarY: 2
         });
 </script>
+<script type="text/javascript">
+    $(".guest-nav a").click(function(e) {
+        var link = $(this).attr('href').substr(1);
+        if (link.length > 1) {
+            offTop = $('#'+link).offset().top;
+            body = $('html, body');
+            body.stop().animate({scrollTop:offTop}, 500);
+        } else {
+            if ($(this).next().is(':hidden')) {
+                $(this).find('.mdi').toggleClass('mdi-chevron-down mdi-chevron-up').parent().next().slideDown(200);
+            } else {
+                $(this).find('.mdi').toggleClass('mdi-chevron-down mdi-chevron-up').parent().next().slideUp(200);
+            }
+            return false;
+        }
+    });
+</script>
 <!--script>
     if('serviceWorker' in navigator) {
         navigator.serviceWorker

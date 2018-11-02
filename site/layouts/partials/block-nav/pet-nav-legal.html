@@ -1,0 +1,29 @@
+<div class="guest-nav">
+	<div class="guest-nav">
+		<div class="guest-nav-inner">
+			<div class="pet-card">
+				<div class="pet-card-head">
+					Прававые документы
+				</div>
+				<div class="pet-card-body">
+					<ul class="links">
+						{{ $currentPage := . }}
+						{{ range .Site.Menus.legal }}
+							<li>
+								<a href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>
+							</li>
+						{{ end }}
+						<li>
+							<a target="_blank" title='Закон РФ от 14 мая 1993 г. N 4979-I "О ветеринарии"' href="{{.Site.Params.link.docs.vet_law}}">Закон РФ от 14 мая 1993 г. N 4979-I "О ветеринарии"</a>
+						</li>
+						<li>
+							<a target="_blank" title='Постановление Правительства РФ от 6 августа 1998 г. N 898 "Об утверждении Правил оказания платных ветеринарных услуг"' href="{{.Site.Params.link.docs.statement}}">Постановление Правительства РФ от 6 августа 1998 г. N 898 "Об утверждении Правил оказания платных ветеринарных услуг"</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

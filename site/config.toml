@@ -3,12 +3,17 @@ languageCode = "en-us"
 title = "Homepage"
 enableRobotsTXT = "true"
 
+sectionPagesMenu = "main"
+
 [params.footer]
   copyright = '© 2018 ООО «Кипет». ❤ All rights reserved.'
   author = "Контактная информация и правовые документы"
   phone = "+7 000 123-45-67 "
   adress = "Российская Федерация, г. Москва"
 
+[params.link.docs]
+  vet_law = '/docs/vet_law.pdf'
+  statement = '/docs/statement.pdf'
 
 [params.contact]
   map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7638984495!2d36.82513038949304!3d55.5807480820225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1541150666166"
@@ -19,23 +24,8 @@ enableRobotsTXT = "true"
   ooo = "ООО «Кипет»"
   llc = "Limited Liability Company «KeePet» "
 
-
 [menu]
-  [[menu.footer]]
-    identifier = "Terms of use"
-    name = "ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ"
-    title = "ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ"
-    url = "/"
-  [[menu.footer]]
-    identifier = "Legal information"
-    name = "ПРАВОВАЯ ИНФОРМАЦИЯ"
-    title = "ПРАВОВАЯ ИНФОРМАЦИЯ"
-    url = "/"
-  [[menu.footer]]
-    identifier = "License Agreement"
-    name = "ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ"
-    title = "ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ"
-    url = "/"
+#Меню в шапке
   [[menu.header]]
     identifier = "Home"
     name = "ГЛАВНАЯ"
@@ -43,20 +33,94 @@ enableRobotsTXT = "true"
     url = "/"
     weight = "1"
   [[menu.header]]
-    identifier = "About"
-    name = "О компании"
-    title = "KeePet О компании "
+    identifier = "Docs"
+    name = "Для ветеринаров"
+    title = "Документация KeePet"
     url = "/"
     weight = "2"
-  [[menu.header]]
-    identifier = "Doctor"
-    name = "Для ветеринаров"
-    title = "KeePet для врачей"
-    url = "/"
-    weight = "3"
   [[menu.header]]
     identifier = "Contact"
     name = "Контакты"
     title = "KeePet контакты"
     url = "/contact"
+    weight = "3"
+
+#Меню на странице документаций
+  [[menu.docs]]
+    identifier = "Home"
+    name = "О KeePet"
+    title = "О KeePet"
+    url = "/"
+    weight = "1"
+  [[menu.docs]]
+    identifier = "View Card"
+    name = "Просмотр медкарты"
+    title = "Просмотр медкарты KeePet"
+    url = '/'
+    weight = "3"
+  [[menu.docs]]
+    identifier = "Search pilul"
+    name = "Поиск описаний лекарств"
+    title = "Поиск описаний лекарств KeePet"
+    url = "/"
     weight = "4"
+  [[menu.docs]]
+    identifier = "Feedback"
+    name = "Обратная связь"
+    title = "Обратная связь KeePet"
+    url = "/"
+    weight = "6"
+  [[menu.online]]
+    identifier = "Online-consult-1"
+    name = "Условия оказания услуги"
+    title = "Условия оказания услуги KeePet"
+    url = "/"
+    weight = "5"
+  [[menu.online]]
+    identifier = "Online-consult-2"
+    name = "Консультация с ветеринаром"
+    title = "Консультация с ветеринаром KeePet"
+    url = "/"
+    weight = "2"
+  [[menu.online]]
+    identifier = "Online-consult-3"
+    name = "Использование промокода"
+    title = "Использование промокода KeePet"
+    url = "/"
+    weight = "3"
+
+#Меню на странице правовые документы
+  [[menu.legal]]
+    identifier = "Terms of use"
+    name = "Пользовательское соглашение"
+    title = "Пользовательское соглашение KeePet"
+    url = "/"
+    weight = "1"
+  [[menu.legal]]
+    identifier = "Legal information"
+    name = "Лицензионное соглашение"
+    title = "Лицензионное соглашение KeePet"
+    url = '/'
+    weight = "2"
+
+#Меню в футере
+  [[menu.footer]]
+    identifier = "Terms of use"
+    name = "ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ"
+    title = "ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ KeePet"
+    weight = "1"
+    url = "/legal"
+  [[menu.footer]]
+    identifier = "Legal information"
+    name = "ПРАВОВАЯ ИНФОРМАЦИЯ"
+    title = "ПРАВОВАЯ ИНФОРМАЦИЯ KeePet"
+    weight = "2"
+    url = "/legal"
+  [[menu.footer]]
+    identifier = "Support"
+    name = "СПРАВКА"
+    title = "Справка KeePet"
+    weight = "3"
+    url = "/docs"
+
+

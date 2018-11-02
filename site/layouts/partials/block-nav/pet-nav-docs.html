@@ -1,0 +1,33 @@
+<div class="guest-nav">
+	<div class="guest-nav-inner">
+		<div class="pet-card">
+			<div class="pet-card-head">
+				KeePet
+			</div>
+			<div class="pet-card-body">
+				<ul class="links">
+					{{ range .Site.Menus.docs }}
+						<li>
+							<a href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>
+						</li>
+					{{ end }}
+					<li>
+						<a href="" class="has-sub">
+							Онлайн-консультация
+							<i class="mdi mdi-24px mdi-chevron-down"></i>
+						</a>
+						<ul class="sub-links">
+							{{ range .Site.Menus.online }}
+							<li>
+								<a href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>
+							</li>
+							{{ end }}
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
