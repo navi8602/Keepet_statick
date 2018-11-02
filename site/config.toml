@@ -7,7 +7,18 @@ enableRobotsTXT = "true"
   copyright = '© 2018 ООО «Кипет». ❤ All rights reserved.'
   author = "Контактная информация и правовые документы"
   phone = "+7 000 123-45-67 "
-  adress = "г. Москва. Сельскохозяйственная ул. д. 10"
+  adress = "Российская Федерация, г. Москва"
+
+
+[params.contact]
+  map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7638984495!2d36.82513038949304!3d55.5807480820225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1541150666166"
+  heading ="Контактная информация"
+  email = "info@keepet.ru"
+  adress = "Российская Федерация, г. Москва"
+  ogrn = "XXXXXXXXXXXXX"
+  ooo = "ООО «Кипет»"
+  llc = "Limited Liability Company «KeePet» "
+
 
 [menu]
   [[menu.footer]]
@@ -25,3 +36,27 @@ enableRobotsTXT = "true"
     name = "ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ"
     title = "ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ"
     url = "/"
+  [[menu.header]]
+    identifier = "Home"
+    name = "ГЛАВНАЯ"
+    title = "KeePet Домашняя страница"
+    url = "/"
+    weight = "1"
+  [[menu.header]]
+    identifier = "About"
+    name = "О компании"
+    title = "KeePet О компании "
+    url = "/"
+    weight = "2"
+  [[menu.header]]
+    identifier = "Doctor"
+    name = "Для ветеринаров"
+    title = "KeePet для врачей"
+    url = "/"
+    weight = "3"
+  [[menu.header]]
+    identifier = "Contact"
+    name = "Контакты"
+    title = "KeePet контакты"
+    url = "/contact"
+    weight = "4"

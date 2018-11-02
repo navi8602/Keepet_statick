@@ -1,24 +1,19 @@
 {{ define "main" }}
-
-<div class="ph3 bg-off-white">
-	<div class="center mw6 pv3">
-
-		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
-
-		{{ .Content }}
-
-		<div class="flex-ns mb3">
-	        	{{ range .Params.contact_entries }}
-				<div>
-					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
-					<p>{{ .text }}</p>
-				</div>
-			{{ end }}
-		</div>
-
-		{{ partial "contact-form" . }}
-
+<div class="pet-map">
+	<iframe src="{{.Site.Params.contact.map}}" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="pet-section pet-contact">
+	<div class="pet-card">
+		<h2>{{.Site.Params.contact.heading}}</h2>
+		<p>
+			{{.Site.Params.contact.adress}}
+			<br><br>
+			ОГРН: {{.Site.Params.contact.ogrn}} <br>
+			{{.Site.Params.contact.ooo}} <br>
+			{{.Site.Params.contact.llc}}
+			<br><br>
+			Почта для обратной связи <a href="{{.Site.Params.contact.email}}">{{.Site.Params.contact.email}}</a>
+		</p>
 	</div>
 </div>
-
 {{ end }}

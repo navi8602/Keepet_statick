@@ -6,8 +6,10 @@
 		<path fill="#2196f3" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
 	</svg>
 	<div class="links">
-		<a href="#">о компании</a>
-		<a href="#">Блог</a>
-		<a href="#">вход и регистрация</a>
+		{{ range .Site.Menus.header }}
+		<a href="{{ .URL }}" title="{{ .Title }}">
+			{{- .Name -}}
+		</a>
+		{{ end }}
 	</div>
 </nav>
